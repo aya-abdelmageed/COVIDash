@@ -2,6 +2,7 @@ import ChartsTabs from "./ChartsTabs";
 import new_deaths_per_day from "../data/new_deaths_per_day.json";
 import total_deaths_per_day from "../data/total_deaths_per_day.json";
 
+// Define an array of tabs for the ChartsTabs component
 const deathsTabs = [
   {
     value: "new_deaths",
@@ -19,7 +20,10 @@ const deathsTabs = [
   },
 ];
 
+// Export the DeathsPerDay component
 export default function DeathsPerDay() {
+
+  // Render the ChartsTabs component with the tabs array as a prop
   return <ChartsTabs tabs={ deathsTabs }/>
 
      

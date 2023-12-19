@@ -1,20 +1,27 @@
+// Importing necessary dependencies
 import countries from "../data/countries.json";
 import { useState } from "react";
 import { Box } from "@mui/material";
 import SearchCountry from "./SearchCountry";
 import { useNavigate } from "react-router-dom";
 
+// Defining the Countries component
 export default function Countries() {
   const navigate = useNavigate();
 
+  // Setting up state for countries list
   const [countriesList, setCountriesList] = useState(countries || []);
-console.log(countries, "countries");
+
+
   return (
     <Box>
+      {/* Rendering the SearchCountry component */}
       <SearchCountry
         setCountriesList={setCountriesList}
         countries={countries}
       />
+
+      {/* Rendering the list of countries */}
       <Box
         sx={{
           display: "flex",

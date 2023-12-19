@@ -3,11 +3,15 @@ import ChartsTabs from "components/ChartsTabs"
 
 import { useParams } from "react-router-dom"
 
+
+// Export the Country component
 export const Country = () =>
 {
   const { country } = useParams()
   const data  = require(`../data/countries/${country}.json`)
 
+
+  // Define an array of tabs for the ChartsTabs component
   const tabs =[
     [
     {
@@ -74,6 +78,8 @@ export const Country = () =>
     },
   ]
   ]
+
+  // Render the Country component
   return (
   <Box>
     <Typography

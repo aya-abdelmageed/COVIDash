@@ -10,27 +10,20 @@ import TestsResult from "components/TestsResult";
 import VaccinationsPerDay from "components/VaccinationsPerDay";
 
 
-
-
-
-
 function App ()
 {
   
   return (
     <div className="App">
       <Header/>
-      
       <CasesPerDay />
       <DeathsPerDay />
       <TestsPerDay />
       <TestsResult />
       <VaccinationsPerDay />
-
       <Countries />
       <Box>
        welcome to the covid tracker
-        
       </Box>
     </div>
   );

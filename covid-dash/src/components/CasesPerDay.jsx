@@ -2,6 +2,7 @@ import ChartsTabs from "./ChartsTabs";
 import new_cases_per_day from "../data/new_cases_per_day.json";
 import total_cases_per_day from "../data/total_cases_per_day.json";
 
+// Define an array of tabs for the ChartsTabs component
 const casesTabs = [
   {
     value: "new_cases",
@@ -19,11 +20,10 @@ const casesTabs = [
   },
 ];
 
+// Export the CasesPerDay component
 export default function CasesPerDay() {
   return (
-    <ChartsTabs tabs={ casesTabs }/>
-
-     
-
-  )
+    // Render the ChartsTabs component with the tabs array as a prop
+    <ChartsTabs tabs={casesTabs} />
+  );
 }
